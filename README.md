@@ -86,26 +86,6 @@ To deploy the CloudFormation template, complete the following steps:
            - Service role for CodeDeploy
            - Security groups for ALB and Amazon EC2
 
-## GitHub configuration and Testing
-
-Please follow the [blog post](https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/) to setup GitHub actions and test the CICD flow.
-
-## Clean up
-
-To avoid incurring future changes, you should clean up the resources that you created.
-
-    1. Empty the Amazon S3 bucket:
-    2. Delete the CloudFormation stack (CodeDeployStack) from the AWS console.
-    3. Delete the GitHub Secret (‘IAMROLE_GITHUB’)
-        1. Go to the repository settings on GitHub Page.
-        2. Select Secrets under Actions.
-        3. Select IAMROLE_GITHUB, and delete it.
 
 
-## Security
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
